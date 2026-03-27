@@ -1,4 +1,4 @@
-import mainImage from '../assets/hero.png';
+import mainImage from '../assets/tree.png';
 
 const Main = () => {
 
