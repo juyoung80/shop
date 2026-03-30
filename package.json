@@ -5,10 +5,12 @@
   "type": "module",
   "homepage": "https://juyoung80.github.io/shop/",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.2.4",
