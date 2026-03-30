@@ -3,7 +3,7 @@ import { users } from '../data/users'
 import { useNavigate } from 'react-router-dom'
 
 
-const Signin = () => {
+const Signin = ({ onLogin }) => {
   // 입력 데이터를 객체로 통합
   const [loginData, setLoginData] = useState({
     userId: '',
@@ -37,6 +37,7 @@ const Signin = () => {
 
     if(matched){
       setLoginResult('success')
+      onLogin(userId) // 로그인 성공시 App 컴포넌트의 로그인 핸들러 호출
       console.log(`로그인 성공 : ID : ${userId}, PW: ${password}`);
 
       navigate('/') // 로그인 성공시 메인페이지로 이동

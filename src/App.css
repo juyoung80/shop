@@ -1,3 +1,7 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+}
 
 .header{
   background-color: #333;
@@ -9,6 +13,33 @@
   color: orange;
   text-decoration: none;
 }
+
+.header-user{
+  display: inline-flex;
+  align-items: center;
+  gap : 10px;
+  color:#fff;
+  margin-left: 10px;
+  float: right;
+}
+
+
+
+.logout-btn{
+  padding:6px 12px;
+  border: 1px solid #ff9f1c;
+  background-color: transparent; /* 배경색 투명 */
+  border-radius: 6px;
+  color:#ff9f1c;
+  cursor:pointer;
+}
+
+.logout-btn:hover{
+  background-color: #ff9f1c;
+  color:#fff;
+} 
+
+
 .main{
   padding: 20px;
   text-align: center;
