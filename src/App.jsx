@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div>
-        <BrowserRouter>
+        <BrowserRouter basename="/product_shop">
           <Header isLoggedIn={isLoggedIn} userId={userId} onLogout={handleLogout} />
           {/* <Main /> */}
           <Routes>
