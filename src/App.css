@@ -1,8 +1,4 @@
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-}
-
+/* header 스타일 */
 .header{
   background-color: #333;
   padding: 20px;
@@ -13,7 +9,6 @@ body{
   color: orange;
   text-decoration: none;
 }
-
 .header-user{
   display: inline-flex;
   align-items: center;
@@ -24,6 +19,86 @@ body{
 }
 
 
+/* main 스타일 */
+.main{
+  text-align: center;
+}
+.main img{
+  margin-top:20px;
+}
+
+/* 상품 목록 스타일 */
+.product-list{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+.table-list{
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.table-list th, .table-list td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table-list th{
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.btn-add{
+  text-align: right;
+  margin-top:20px;
+  margin-right: 20%;
+}
+.btn-add button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; 
+  border-radius: 4px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* 상품 등록 스타일 */
+.add-form{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+.add-form label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+.add-form input, .add-form textarea{
+  width: 96%;
+  padding: 2%;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add-form button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745; 
+  border-radius: 4px;
+  color:#fff;
+  cursor:pointer;
+}
+.add-form button:hover{
+  background-color: #218838;
+}
+.add-form button[type="submit"]{
+  margin-right:10px;
+}
+.add-form button[type="button"]{
+  background-color: #666;
+}
+.add-form button[type="button"]:hover{
+  background-color: #444;
+}
 
 .logout-btn{
   padding:6px 12px;
@@ -33,19 +108,8 @@ body{
   color:#ff9f1c;
   cursor:pointer;
 }
-
 .logout-btn:hover{
   background-color: #ff9f1c;
   color:#fff;
 } 
 
-
-.main{
-  padding: 20px;
-  text-align: center;
-}
-
-.product-list, .add-product, .sign-in{
-  padding: 20px;
-  text-align: center;
-}
