@@ -13,10 +13,12 @@ const ProductInfo = () => {
     return(
         <section className="product-info">
             <h1>상품 정보</h1>
-            <p>상품 ID: {id}</p>
-            <p>상품명: {product.name}</p>
-            <p>상품 가격: {product.price}</p>
-            <p>상품 설명: {product.description}</p>
+             <div className="product-details">
+                <p>상품 ID: {id}</p>
+                <p>상품명: {product.name}</p>
+                <p>상품 가격: {product.price}</p>
+                <p>상품 설명: {product.description}</p>
+            </div>
         </section>
     )
 }

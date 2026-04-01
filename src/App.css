@@ -60,6 +60,19 @@
   cursor:pointer;
 }
 
+/* 상품 정보 스타일 */
+/* 상품 정보 */
+.product-details{ 
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+.product-details p {margin-bottom: 10px;}
+
 /* 상품 등록 스타일 */
 .add-form{
   width: 40%;
@@ -100,16 +113,23 @@
   background-color: #444;
 }
 
-.logout-btn{
-  padding:6px 12px;
-  border: 1px solid #ff9f1c;
-  background-color: transparent; /* 배경색 투명 */
-  border-radius: 6px;
-  color:#ff9f1c;
-  cursor:pointer;
+/* 로그인 폼 */
+.signin-form {width: 30%; margin: 0 auto; text-align: left;}
+.signin-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.logout-btn:hover{
-  background-color: #ff9f1c;
-  color:#fff;
-} 
-
+.signin-form button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 3%;
+}
+.signin-form button:hover {background-color: #0056b3;}
